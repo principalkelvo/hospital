@@ -3,13 +3,15 @@
     <h2 class="title has-text-weight-bold has-text-black is-size-4">
       {{ title }}
     </h2>
-    <div class="column is-12">
+    <div class="column is-12 is-fullwidth box">
       <input type="text" class="input is-small is-rounded column is-4 mb-2" placeholder="&#xebf7; Search..."
         v-model="searchTerm" />
       <vue-good-table :columns="columns" :rows="rows" :line-numbers="true" max-height="500px" :search-options="{
         enabled: true,
         externalQuery: searchTerm,
-      }" :pagination-options="{
+      }" :sort-options="{
+  enabled: false,
+}" :pagination-options="{
   enabled: true,
   mode: 'pages',
   perPage: 5,
