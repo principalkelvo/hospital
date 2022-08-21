@@ -1,43 +1,50 @@
 <template>
- <div>
+  <div>
     <section class="hero">
       <div class="hero-body">
         <div class="">
           <h2 class="title has-text-weight-bold has-text-black is-size-4">
-            Orders
+            Summary
           </h2>
           <div class="columns is-fullwidth has-background-white box">
             <div class="column m-2 box has-background-faded-pink">
-              <h2
-                class="is-size-6 has-text-weight-bold has-text-black is-size-4 has-text-centered"
-              >
-                Active Orders
+              <h2 class="is-size-6 has-text-weight-bold has-text-black is-size-4 has-text-centered">
+                TOTAL PATIENTS
               </h2>
             </div>
             <div class="column m-2 box has-background-faded-pink">
-              <h2
-                class="is-size-6 has-text-weight-bold has-text-black is-size-4 has-text-centered"
-              >
-                Shipped orders
+              <h2 class="is-size-6 has-text-weight-bold has-text-black is-size-4 has-text-centered">
+                ACTIVE PATIENTS
               </h2>
             </div>
             <div class="column m-2 box has-background-faded-pink">
-              <h2
-                class="is-size-6 has-text-weight-bold has-text-black is-size-4 has-text-centered"
-              >
-                Returned Orders
+              <h2 class="is-size-6 has-text-weight-bold has-text-black is-size-4 has-text-centered">
+                TOTAL NURSES
               </h2>
 
             </div>
             <div class="column m-2 box has-background-faded-pink">
-              <h2
-                class="is-size-6 has-text-weight-bold has-text-black is-size-4 has-text-centered"
-              >
-                Closed orders
+              <h2 class="is-size-6 has-text-weight-bold has-text-black is-size-4 has-text-centered">
+                TOTAL DOCTORS
               </h2>
 
             </div>
           </div>
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="columns is-fullwidth has-background-white box">
+          <allTable title="Patients" />
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="columns is-fullwidth has-background-white box">
+          <allTable title="Nurses" />
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="columns is-fullwidth has-background-white box">
+          <allTable title="Doctors" />
         </div>
       </div>
     </section>
@@ -45,13 +52,14 @@
 </template>
 
 <script>
+// import {ref} from 'vue'
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import allTable from '@/components/allTable.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
-  }
+    allTable,
+  },
 }
 </script>
