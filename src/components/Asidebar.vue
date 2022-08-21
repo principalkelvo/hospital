@@ -7,7 +7,7 @@
     </div>
 
     <!-- WATCHLIST -->
-    <div class="watch">
+    <!-- <div class="watch">
       <div class="watch-title">WATCHLIST</div>
       <div class="Watch-details" style="margin-top: 5px">
         <div class="watch-content">
@@ -23,7 +23,7 @@
         </div>
         <p class="watch-loss">-3.45%</p>
       </div>
-    </div>
+    </div> -->
 
     <ul class="nav-links">
       <div class="nav-title">MAIN MENU</div>
@@ -57,24 +57,12 @@
                   d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"
                 ></path></svg
             ></i>
-            <span class="link_name">Products</span>
+            <span class="link_name">Patients</span>
           </router-link>
-          <!-- dropdown icon  -->
-          <i class="bx bxs-chevron-down arrow"></i>
         </div>
 
         <ul class="sub-menu">
-          <li><router-link class="link_name" to="#">Products </router-link></li>
-          <li>
-            <router-link to="/inventory" class="pl-2"
-              >Inventory Management</router-link
-            >
-          </li>
-          <li>
-            <router-link to="/products" class="pl-2"
-              >Product Management</router-link
-            >
-          </li>
+          <li><router-link class="link_name" to="#">Patients </router-link></li>
         </ul>
       </li>
 
@@ -85,7 +73,7 @@
           <li><router-link class="pl-2" to="#">Customers Reviews</router-link></li>
         </ul> -->
       <li>
-        <router-link class="link_icon" to="/customers">
+        <router-link class="link_icon" to="/">
           <!-- icon -->
           <i class="has-text-black"
             ><svg
@@ -102,12 +90,12 @@
                 d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
               ></path></svg
           ></i>
-          <span class="link_name">Customers</span>
+          <span class="link_name">Nurses</span>
         </router-link>
         <ul class="sub-menu blank">
           <li>
-            <router-link class="link_name" to="/customers"
-              >Customers</router-link
+            <router-link class="link_name" to="/"
+              >Nurses</router-link
             >
           </li>
         </ul>
@@ -119,19 +107,11 @@
           <router-link to="#">
             <!-- icon -->
             <i class="bx bxs-business has-text-black"></i>
-            <span class="link_name">Branches</span>
+            <span class="link_name">Doctors</span>
           </router-link>
-          <!-- dropdown icon  -->
-          <i class="bx bxs-chevron-down arrow"></i>
         </div>
         <ul class="sub-menu">
-          <li><router-link class="link_name" to="#">Branches </router-link></li>
-          <li>
-            <router-link href="/branches" class="pl-2" to="/branches"
-              >All Branches</router-link
-            >
-          </li>
-          <li><router-link class="pl-2" to="#">Warehouse</router-link></li>
+          <li><router-link class="link_name" to="#">Doctors </router-link></li>
         </ul>
       </li>
 
@@ -140,73 +120,13 @@
           <router-link to="#">
             <!-- icon -->
             <i class="bx bx-user has-text-black"></i>
-            <span class="link_name">Employees</span>
+            <span class="link_name">Profile</span>
           </router-link>
-          <!-- dropdown icon  -->
-          <i class="bx bxs-chevron-down arrow"></i>
         </div>
         <ul class="sub-menu">
           <li>
-            <router-link class="link_name" to="#">Employees </router-link>
+            <router-link class="link_name" to="#">Profile </router-link>
           </li>
-          <li><router-link class="pl-2" to="/employees">Staffs</router-link></li>
-          <li><router-link class="pl-2" to="Leave">Leave</router-link></li>
-          <li><router-link class="pl-2" to="/ex_employees">Ex employees</router-link></li>
-        </ul>
-      </li>
-
-      <li>
-        <div class="iocn-link">
-          <router-link to="#">
-            <!-- icon -->
-            <i class="has-text-black"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                ></path></svg
-            ></i>
-            <span class="link_name">Orders</span>
-          </router-link>
-          <!-- dropdown icon  -->
-          <i class="bx bxs-chevron-down arrow"></i>
-        </div>
-        <ul class="sub-menu">
-          <li>
-            <router-link class="link_name" to="#">Orders </router-link>
-          </li>
-          <li><router-link class="pl-2" to="/orders">Orders</router-link></li>
-          <li><router-link class="pl-2" to="/transactions">Transactions</router-link></li>
-        </ul>
-      </li>
-
-      <li>
-        <div class="iocn-link">
-          <router-link to="/reports">
-            <!-- icon -->
-            <i class="bx bx-spreadsheet has-text-black"></i>
-            <span class="link_name">Reports</span>
-          </router-link>
-          <!-- dropdown icon  -->
-          <i class="bx bxs-chevron-down arrow"></i>
-        </div>
-        <ul class="sub-menu">
-          <li><router-link class="link_name" to="/reports">Reports</router-link></li>
-          <li><router-link class="pl-2" to="/accounts_reports">Accounts</router-link></li>
-          <li><router-link class="pl-2" to="/staffs_reports">Staffs reports</router-link></li>
-          <li>
-            <router-link class="pl-2" to="/customer_reports">Customers reports</router-link>
-          </li>
-          <li><router-link class="pl-2" to="/branches_reports">Branch reports</router-link></li>
-          <li><router-link class="pl-2" to="/hr_reports">HR reports</router-link></li>
         </ul>
       </li>
 
