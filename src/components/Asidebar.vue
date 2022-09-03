@@ -34,7 +34,9 @@
           <span class="link_name">Dashboard</span>
         </router-link>
         <ul class="sub-menu blank">
-          <li><router-link class="link_name" to="/">Dashboard</router-link></li>
+          <li>
+            <router-link class="link_name" to="/">Dashboard</router-link>
+          </li>
         </ul>
       </li>
 
@@ -42,27 +44,20 @@
         <div class="iocn-link">
           <router-link to="#">
             <!-- icon -->
-            <i class="has-text-black"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"
-                ></path></svg
-            ></i>
+            <i class="has-text-black"><svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z">
+                </path>
+              </svg></i>
             <span class="link_name">Patients</span>
           </router-link>
         </div>
 
         <ul class="sub-menu">
-          <li><router-link class="link_name" to="#">Patients </router-link></li>
+          <li>
+            <router-link class="link_name" to="#">Patients </router-link>
+          </li>
         </ul>
       </li>
 
@@ -75,32 +70,21 @@
       <li>
         <router-link class="link_icon" to="/">
           <!-- icon -->
-          <i class="has-text-black"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-              ></path></svg
-          ></i>
+          <i class="has-text-black"><svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+              </path>
+            </svg></i>
           <span class="link_name">Nurses</span>
         </router-link>
         <ul class="sub-menu blank">
           <li>
-            <router-link class="link_name" to="/"
-              >Nurses</router-link
-            >
+            <router-link class="link_name" to="/">Nurses</router-link>
           </li>
         </ul>
       </li>
-      
+
 
       <li>
         <div class="iocn-link">
@@ -111,13 +95,15 @@
           </router-link>
         </div>
         <ul class="sub-menu">
-          <li><router-link class="link_name" to="#">Doctors </router-link></li>
+          <li>
+            <router-link class="link_name" to="#">Doctors </router-link>
+          </li>
         </ul>
       </li>
 
       <li>
         <div class="iocn-link">
-          <router-link to="#">
+          <router-link to="/profile">
             <!-- icon -->
             <i class="bx bx-user has-text-black"></i>
             <span class="link_name">Profile</span>
@@ -125,7 +111,7 @@
         </div>
         <ul class="sub-menu">
           <li>
-            <router-link class="link_name" to="#">Profile </router-link>
+            <router-link class="link_name" to="/profile">Profile </router-link>
           </li>
         </ul>
       </li>
@@ -137,20 +123,22 @@
           <span class="link_name">Settings</span>
         </router-link>
         <ul class="sub-menu blank">
-          <li><router-link class="link_name" to="/settings">Settings </router-link></li>
+          <li>
+            <router-link class="link_name" to="/settings">Settings </router-link>
+          </li>
         </ul>
       </li>
 
-      <li>
-        <div class="profile-details-help profile-details">
-          <!-- logout icon  -->
-          <i class="bx bx-phone has-text-black"></i>
+      <!-- <li>
+        <div class="profile-details-help profile-details"> -->
+      <!-- logout icon  -->
+      <!-- <i class="bx bx-phone has-text-black"></i>
           <div class="name-job">
             <div class="profile_name">Help & support</div>
           </div>
           <div class="profile-content"></div>
         </div>
-      </li>
+      </li> -->
       <li>
         <div class="profile-details">
           <!-- logout icon  -->
@@ -159,12 +147,7 @@
             <div class="profile_name">Dark Mode</div>
           </div>
           <div class="profile-content">
-            <img
-              id="slideout"
-              v-bind:src="darkmode1"
-              alt="img"
-              @click="darkmode"
-            />
+            <img id="slideout" v-bind:src="darkmode1" alt="img" @click="darkmode" />
           </div>
         </div>
       </li>
@@ -226,16 +209,20 @@ export default {
   z-index: 20;
   transition: all 0.5s ease;
 }
+
 .sidebar.close {
   width: 78px;
 }
+
 .sidebar .watch {
   margin-top: 30px;
 }
+
 .sidebar.close .watch {
   display: none;
   transition: all 0.5s ease;
 }
+
 .sidebar .watch .watch-title {
   margin: 0 30px;
   font-weight: 600;
@@ -248,6 +235,7 @@ export default {
 
   color: #c4c4c4;
 }
+
 .sidebar .Watch-details {
   /* width: 100%; */
   display: flex;
@@ -263,12 +251,15 @@ export default {
   letter-spacing: 0.05em;
   color: #000000;
 }
+
 .sidebar .Watch-details .branch_id {
   color: #24242490;
 }
+
 .sidebar .watch .watch-profit {
   color: #24ff00;
 }
+
 .sidebar .watch .watch-loss {
   color: #ff0000;
 }
@@ -302,12 +293,14 @@ export default {
   opacity: 0;
   pointer-events: none;
 }
+
 .sidebar .nav-links {
   height: 75%;
   padding: 10px 0 12em 0;
   overflow: auto;
   margin-top: 0;
 }
+
 .sidebar.close .nav-links {
   overflow: visible;
 }
@@ -329,6 +322,7 @@ export default {
 
   color: #c4c4c4;
 }
+
 .sidebar.close .nav-links .nav-title {
   display: none;
 }
@@ -338,6 +332,7 @@ export default {
   list-style: none;
   transition: all 0.4s ease;
 }
+
 .sidebar .nav-links li:hover {
   border-radius: 20px;
   background: rgba(196, 196, 196, 0.18);
@@ -398,11 +393,13 @@ export default {
   border-radius: 2px;
   border: 0;
 }
+
 .sidebar .nav-links li .iocn-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .sidebar.close .nav-links li .iocn-link {
   display: block;
 }
@@ -427,9 +424,11 @@ export default {
   transform: rotate(-180deg);
   color: black;
 }
+
 .sidebar.close .nav-links i.arrow {
   display: none;
 }
+
 .sidebar .nav-links li a {
   display: flex;
   align-items: center;
@@ -451,11 +450,13 @@ export default {
   opacity: 0;
   pointer-events: none;
 }
+
 .sidebar .nav-links li .sub-menu {
   padding: 6px 6px 14px 80px;
   margin-top: -10px;
   display: none;
 }
+
 .sidebar.close .nav-links li .sub-menu {
   background: linear-gradient(177.08deg, #9362f7 -7.99%, #892bda 118.63%);
 }
@@ -501,6 +502,7 @@ export default {
 .sidebar .nav-links li .sub-menu .link_name {
   display: none;
 }
+
 .sidebar.close .nav-links li .sub-menu .link_name {
   display: none;
 }
@@ -535,6 +537,7 @@ export default {
   padding: 0 0 6px 2px;
   transition: all 0.5s ease;
 }
+
 .sidebar .profile-details-help {
   position: fixed;
   bottom: 2.5em;
@@ -546,6 +549,7 @@ export default {
   padding: 0 0 6px 2px;
   transition: all 0.5s ease;
 }
+
 .sidebar.close .profile-details {
   width: 78px;
   background: none;
@@ -555,6 +559,7 @@ export default {
   display: flex;
   align-items: center;
 }
+
 .sidebar .profile-details img {
   height: 1.2em;
   /* object-fit: cover; */
@@ -562,6 +567,7 @@ export default {
   transition: all 0.6s ease;
   cursor: pointer;
 }
+
 .sidebar.close .profile-details img {
   margin: 0 15px 0 14px;
 }
@@ -593,10 +599,12 @@ export default {
   /* animation: 1s ease-in 0s 1 slideInFromLeft; */
   animation: fade 1s ease-in-out;
 }
+
 @keyframes fade {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

@@ -83,4 +83,30 @@ section.section {
   }
 
 }
+.has-background-pink,
+.is-pink {
+  background: #dd51ed;
+}
+.has-text-pink{
+  color:#dd51ed;
+}
+.has-background-faded-pink,
+.is-faded-pink {
+  background: rgba(221, 81, 237, 0.4);
+}
+.has-background-purple,
+.is-purple {
+  background: #8a33de;
+}
+.has-text-purple{
+  color:#8a33de;
+}
+.has-background-faded-purple,
+.is-faded-purple {
+  background: #862ddaa6;
+}
+.is-webkit-center {
+  text-align: -webkit-center;
+}
+
 </style>

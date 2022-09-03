@@ -114,7 +114,7 @@ export default {
       }
   },
   mounted(){
-    document.title='Register | POS'
+    document.title='Register | Hospital'
   },
   methods:{
     async submitForm(){
